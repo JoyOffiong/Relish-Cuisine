@@ -1,0 +1,637 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.mainwrap{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: black;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+/* home-page styling */
+.bodywrap {
+  position: relative;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+a li:hover {
+  text-decoration: underline;
+}
+header {
+  background:transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 600;
+  padding: 0.5% 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.mobileheader {
+  display: none;
+}
+.logo {
+  width: 30%;
+  padding-left: 2%;
+  color: firebrick;
+}
+.navlinkswrap {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding-bottom: 0;
+}
+.navlink1{
+  color: red;
+}
+.primarynav {
+  width: 70%;
+  /* padding-right: 10px; */
+  list-style: none;
+}
+.icon {
+  width: 30%;
+  margin-left: 8%;
+  /* color: black; */
+}
+.primarynav {
+  display: flex;
+  justify-content: space-between;
+}
+.hamburger-icon {
+  display: none;
+}
+
+#home-page {
+  height: 100vh;
+  min-width: 100%;
+  background-image: url(../images/brooke-lark-08bOYnH_r_E-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.homepage-text {
+  width: 50%;
+  margin-left: auto;
+  padding-top: 15%;
+  font-size: 3rem;
+  color: black;
+}
+.input-media {
+  width: 80%;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.input-container input {
+  border: 1px solid gainsboro;
+  height: 35px;
+  min-width: 70%;
+}
+select {
+  background-color: rgb(243, 190, 14);
+  border: none;
+  height: 35px;
+}
+.media {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+.facebook,
+.instagram,
+.twitter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facebook a img,
+.instagram a img,
+.twitter a img {
+  width: 20px;
+  height: 20px;
+}
+.facebook p,
+.instagram p,
+.twitter p {
+  margin-left: 1px;
+  margin-top: 15px;
+}
+.media p {
+  font-size: 16px;
+}
+
+/* About-Us Styling */
+.about-us {
+  background-image: url(../images/jakub-kapusnak-sDbj1dFlFPU-unsplash.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  /* height: 100vh; */
+}
+.about-us-content {
+  padding-top: 10%;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+.page-title {
+  margin-top: 2%;
+  margin-bottom: 10px;
+  color: rgb(243, 190, 14);
+  font-size: 25px;
+}
+.page-heading {
+  font-size: 40px;
+  margin-bottom: 2%;
+}
+.longtext,
+.shorttext {
+  font-size: 18px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: 2%;
+  transition: all 0.3s ease;
+}
+.btn-icon {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+}
+.btn-icon svg {
+  background-color: rgb(241, 213, 162);
+  height: 31px;
+}
+.button {
+  background-color: rgb(243, 190, 14);
+  width: 150px;
+  height: 33px;
+  margin: auto;
+  /* padding:  1px 7px; */
+  border: none;
+}
+.btn-icon a {
+  color: white;
+}
+.arrow-icon {
+  margin-top: 0.4%;
+}
+
+/* Order-Online Section */
+.order-content {
+  padding-top: 3%;
+  text-align: center;
+}
+.menu {
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-bottom: 1%;
+  width: 43%;
+  text-align: center;
+}
+.menu ul {
+  display: flex;
+  text-align: center;
+  width: 70%;
+  /* margin: 0 30%; */
+}
+li {
+  list-style: none;
+}
+.menu li a {
+  padding-right: 70px;
+}
+.menu ul li a:hover {
+  color: rgb(243, 190, 14);
+}
+hr {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  margin-top: 0;
+}
+hr:hover {
+  color: 1px rgb(243, 190, 14) solid;
+  cursor: pointer;
+}
+.menu-list {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+.item1,
+.item2,
+.item3,
+.item4 {
+  background-image: url(../images/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 23%;
+  height: 300px;
+  position: relative;
+}
+
+/* hover-styling for the items */
+.hover-content {
+  /* margin-top: 80px; */
+  color: white;
+  font-size: 18px;
+  display: none;
+  position: absolute;
+  transition: 0.3s ease;
+  top: 50px;
+  right: 2px;
+  left: 2px;
+}
+.hover-price {
+  margin-bottom: 15px;
+}
+.icons i {
+  margin-bottom: 10px;
+  color: rgb(243, 190, 14);
+}
+.hover-text {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.hover-button {
+  border: none;
+  padding: 3px 10px;
+  background-color: rgb(243, 190, 14);
+  color: white;
+}
+.item2 {
+  background-image: url(../images/casey-lee-awj7sRviVXo-unsplash.jpg);
+}
+.item3 {
+  background-image: url(../images/lily-banse--YHSwy6uqvk-unsplash.jpg);
+}
+.item4 {
+  background-image: url(../images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg);
+}
+
+.item1:hover .hover-content,
+.item2:hover .hover-content,
+.item3:hover .hover-content,
+.item4:hover .hover-content {
+  display: block;
+}
+.item1:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg);
+}
+.item2:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/casey-lee-awj7sRviVXo-unsplash.jpg);
+}
+.item3:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/lily-banse--YHSwy6uqvk-unsplash.jpg);
+}
+.item4:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg);
+}
+.icons-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 10%;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+/* .wrap{
+  
+} */
+.wrap{
+  padding-left: 2.5%  ;
+}
+.wrap:hover {
+  transform: scale(1.8);
+  transition: all 0.5s ease;
+}
+.wrap svg:hover {
+  transform: scale(1);
+  fill: rgb(243, 144, 14);
+}
+
+/* Book Now Styling */
+.opening-hours-content {
+  text-align: center;
+  /* z-index: 200; */
+}
+.opening-hours-content svg {
+  width: 45px;
+  height: 45px;
+  fill: rgb(243, 144, 14);
+  border: 2px rgb(243, 144, 14) solid;
+  border-radius: 50%;
+  padding: 5px;
+}
+.opening-hours-content svg:hover {
+  transition: 0.5s ease-in-out;
+  transform: rotate(-360deg);
+}
+.number {
+  font-size: 18px;
+  color: rgb(243, 144, 14);
+  padding-top: 4px;
+}
+.opening-hours-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.85),
+      rgba(254, 254, 255, 0.85)
+    ),
+    url(/cuisine-restaurant/images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.call-now {
+  margin-top: 1%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.number:hover {
+  cursor: pointer;
+}
+.days-hours {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+}
+.mon-wed {
+  margin-right: 5%;
+}
+.opening-hour-inner-image {
+  width: 80%;
+  margin: 2% auto;
+  height: 370px;
+}
+.opening-hour-inner-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 370px;
+}
+.testimonials-content {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 3%;
+}
+.customer-image {
+  margin: 0 auto;
+}
+.customer-image img {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.customer-name {
+  padding: 1% 0;
+  font-size: 18px;
+}
+.testimonials-content i {
+  color: rgb(243, 190, 14);
+}
+.customer-review {
+  text-align: justify;
+}
+footer {
+  background-color: rgb(243, 144, 14);
+  text-align: center;
+}
+footer p {
+  padding: 1% 0;
+}
+.theme{
+position: absolute;
+left: 0;
+top: 0;
+  width: 100px;
+  height: 40px;
+  border: #eee solid 2px;
+  /* color: inherit; */
+  color: #505050;
+  background-color: transparent;
+}
+.theme.dark{
+  background-color: transparent;
+  /* color: white; */
+  color: inherit;
+  border: 2px solid #505050;
+}
+
+
+/* Tablet View */
+@media (max-width: 1200px) {
+  .media {
+    width: 70%;
+  }
+  .navlinkswrap{
+    width: 70%;
+  }
+  .logo{
+    width: 10%;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 760px) {
+  /* header stying */
+  .mobileheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 30px;
+    background-color: rgb(231, 231, 240);
+    z-index: 200;
+    overflow-y: hidden;
+  }
+  .logo, .icon {
+    display: none;
+  }
+  .buttons{
+    width: 30%;
+  }
+  .mobilelogo{
+   width: 30%;
+    color: firebrick;
+  }
+  .mobilelogo, .mobileicon, .nav-toggle1{
+    display: block;
+  }
+  .mobileicon{
+    width: 30%;
+    padding-left: 2%;
+  }
+  .nav-toggle1 {
+    cursor: pointer;
+    border-radius: none;
+    width: 2rem;
+    border: none;
+    background-color: transparent;
+    aspect-ratio: 1;
+  }
+  .nav-toggle1 i, .nav-toggle2 i{
+    font-size: 20px;
+  }
+  .nav-toggle2 {
+    cursor: pointer;
+    border-radius: none;
+    border: none;
+    width: 2rem;
+    background-color: transparent;
+    aspect-ratio: 1;
+    display: none;
+  }
+
+  .primarynav {
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    top: 28px;
+    align-items: none;
+    text-align: center;
+    padding-top: 6%;
+    height: 100vh;
+    width: 100%;
+    line-height: 3rem;
+    font: bold;
+    transform: translateX(-100%);
+    display: block;
+    transition: 350ms ease;
+    background-color: rgb(248, 246, 246);
+  }
+
+  #home-page {
+    background-image: none;
+    height: 40vh;
+    margin: 30% 0;
+  }
+  .homepage-text {
+    padding: 15% 2%;
+  }
+  /* #nav-toggle {
+    position: absolute;
+    top: 7px;
+    margin-right: 1rem;
+    right: 0;
+  } */
+  /* #nav-toggle,
+  #hamburger-icon {
+    display: block;
+  } */
+  .homepage-text {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .text-wrap {
+    padding-top: 0;
+  }
+  .input-media {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 5%;
+  }
+  .input-container {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  .media {
+    width: 70%;
+    text-align: center;
+  }
+  select {
+    background-color: rgb(243, 190, 14);
+    border: none;
+    padding: 10px 5px;
+  }
+  .facebook,
+  .instagram,
+  .twitter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .facebook a img,
+  .instagram a img,
+  .twitter a img {
+    width: 15px;
+    height: 15px;
+  }
+  .facebook p,
+  .instagram p,
+  .twitter p {
+    margin-top: 11px;
+  }
+  .media p {
+    font-size: 16px;
+  }
+
+  .about-us {
+    background-image: none;
+  }
+  .about-us-content {
+    width: 100%;
+  }
+  .page-title {
+    font-size: 18px;
+  }
+  .page-heading {
+    font-size: 30px;
+  }
+  .menu,
+  hr {
+    display: none;
+  }
+  .menu-list {
+    display: block;
+    width: 70%;
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    width: 100%;
+    margin-bottom: 9%;
+  }
+}
